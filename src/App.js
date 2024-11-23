@@ -32,7 +32,7 @@ import Signup from "./zoomdemo/Signup"; // Assuming Signup is in a separate file
 export default function App() {
   return (
     <Router>
-      <TransformWrapper initialScale={1} minScale={0.5} maxScale={3} wheel={{ step: 0.1 }} pinch={{ step: 0.1 }}>
+      <TransformWrapper initialScale={1} minScale={0.5} maxScale={3}  pinch={{ step: 0.1 }}>
         <TransformComponent>
           <div style={styles.main}>
             <nav style={styles.navbar}>
@@ -58,7 +58,7 @@ export default function App() {
 // Styling
 const styles = {
   main:{
-    
+
   },
   navbar: {
     display: "flex",
